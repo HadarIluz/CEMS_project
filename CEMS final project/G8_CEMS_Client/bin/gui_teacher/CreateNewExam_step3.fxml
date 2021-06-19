@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="585.0" prefWidth="761.0" style="-fx-background-color: #FFFFE0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_teacher.CreateNewExam_step3Controller">
+   <children>
+      <Text fx:id="textMsg_newExam" layoutX="96.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New ExamID had beed created:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnCreateNewExam" layoutX="448.0" layoutY="198.0" mnemonicParsing="false" onAction="#btnCreateNewExam" text="YES, Create New Exam" textFill="#278400">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Text fill="#4672ae" layoutX="256.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create New Exam" wrappingWidth="256.150390625">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="imgStep1" fitHeight="59.0" fitWidth="74.0" layoutX="244.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@step1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgStep2" fitHeight="59.0" fitWidth="74.0" layoutX="348.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@step2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgStep3" fitHeight="59.0" fitWidth="74.0" layoutX="452.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@step3color.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="101.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Are you sure you want to create the exam?">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Separator layoutX="9.0" layoutY="241.0" prefHeight="3.0" prefWidth="750.0" />
+      <Text fx:id="textExamID" fill="#408d05" layoutX="346.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="010203">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnBack" layoutX="84.0" layoutY="527.0" maxWidth="-Infinity" mnemonicParsing="false" onAction="#btnBack" prefHeight="25.0" prefWidth="122.0" text=" &lt; Back" />
+      <ImageView fx:id="imgComputer" fitHeight="137.0" fitWidth="135.0" layoutX="578.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@desktop.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

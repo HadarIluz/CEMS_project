@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="585.0" prefWidth="761.0" style="-fx-background-color: #FFFFE0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_teacher.TeacherStatisticsController">
+   <children>
+      <Label layoutX="40.0" layoutY="74.0" prefHeight="31.0" prefWidth="148.0" text="Enter Exam ID:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textExamID" layoutX="264.0" layoutY="77.0" maxWidth="-Infinity" prefHeight="27.0" prefWidth="191.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </TextField>
+      <Label contentDisplay="TOP" layoutX="353.0" layoutY="162.0" prefHeight="37.0" prefWidth="157.0" text="Grades Average: " textAlignment="RIGHT">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="164.0" text="Median:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="textMedian" alignment="CENTER" layoutX="141.0" layoutY="163.0" prefHeight="35.0" prefWidth="77.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="textCourse" alignment="CENTER" layoutX="422.0" layoutY="118.0" prefHeight="35.0" prefWidth="312.0" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="253.0" layoutY="45.0" textFill="#4867c4">
+         <font>
+            <Font name="Arial Bold" size="32.0" />
+         </font>
+      </Label>
+      <BarChart fx:id="ExamHisto" alternativeColumnFillVisible="true" animated="false" barGap="3.0" categoryGap="3.0" layoutX="6.0" layoutY="198.0" legendSide="TOP" prefHeight="372.0" prefWidth="743.0" title="Grades Distribution:">
+         <xAxis>
+            <CategoryAxis prefHeight="15.0" prefWidth="607.0" side="BOTTOM" tickLabelFill="#171717" tickLabelGap="10.0" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis autoRanging="false" side="LEFT" tickLabelGap="5.0" upperBound="20.0" />
+         </yAxis>
+      </BarChart>
+      <Button fx:id="btnShowStatistic" layoutX="494.0" layoutY="78.0" mnemonicParsing="false" onMouseClicked="#btnShowStatistic" prefHeight="25.0" prefWidth="65.0" text="Show" />
+      <Label fx:id="textErrorMessage" layoutX="264.0" layoutY="132.0" prefHeight="17.0" prefWidth="184.0" text="Missing Parameter/ incorrect ID" textFill="#f21e1e" visible="false">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="119.0" text="Profession:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="350.0" layoutY="120.0" text="Course:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="textProfession" alignment="CENTER" layoutX="132.0" layoutY="118.0" prefHeight="35.0" prefWidth="201.0" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="textAverage" alignment="CENTER" layoutX="538.0" layoutY="163.0" prefHeight="35.0" prefWidth="94.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Text fill="#4672ae" layoutX="176.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exam Statistics" textAlignment="CENTER" wrappingWidth="392.1504211425781">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="585.0" prefWidth="761.0" style="-fx-background-color: #FFFFE0;" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_teacher.AddTimeToExamController">
+   <children>
+      <Button fx:id="btnSubmitTimeExtentionRequest" layoutX="556.0" layoutY="487.0" mnemonicParsing="false" onAction="#btnSubmitTimeExtentionRequest" prefHeight="44.0" prefWidth="150.0" text="Submit">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="83.0" layoutY="236.0" prefHeight="31.0" prefWidth="140.0" text="Additional time:">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNoteInMinutes" layoutX="230.0" layoutY="262.0" prefHeight="23.0" prefWidth="115.0" text="*In minutes" textFill="#fd0606">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textAdditionalTime" layoutX="230.0" layoutY="234.0" prefHeight="31.0" prefWidth="175.0" promptText="in minutes" />
+      <TextField fx:id="textReqReason" alignment="TOP_LEFT" layoutX="231.0" layoutY="303.0" prefHeight="153.0" prefWidth="336.0" />
+      <Label layoutX="83.0" layoutY="186.0" prefHeight="31.0" prefWidth="140.0" text="Exam Code:">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textExamCode" layoutX="230.0" layoutY="184.0" prefHeight="31.0" prefWidth="175.0" />
+      <Label layoutX="83.0" layoutY="135.0" prefHeight="31.0" prefWidth="140.0" text="ExamID:">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textExamID" layoutX="230.0" layoutY="133.0" prefHeight="31.0" prefWidth="175.0" />
+      <Label layoutX="83.0" layoutY="297.0" prefHeight="31.0" prefWidth="140.0" text="Request reason:">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Text fill="#e44d4d" layoutX="72.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="20.356842041015625">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text fill="#e44d4d" layoutX="73.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="20.356842041015625">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text fill="#e44d4d" layoutX="73.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="20.356842041015625">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text fill="#4672ae" layoutX="209.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time Extension Request" wrappingWidth="392.1504211425781">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <Text fill="#e44d4d" layoutX="72.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="20.356842041015625">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

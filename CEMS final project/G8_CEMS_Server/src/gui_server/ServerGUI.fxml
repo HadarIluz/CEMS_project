@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="rootOfMain" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_server.ServerFrameController">
+  <children>
+    <MenuBar fx:id="manubar" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="CEMS -" />
+        <Menu mnemonicParsing="false" text="Computerized exam management system" />
+      </menus>
+    </MenuBar>
+    <SplitPane fx:id="paneSplitter" dividerPositions="0.2505567928730512" focusTraversable="true" prefHeight="418.0" prefWidth="653.0" VBox.vgrow="ALWAYS">
+      <items>
+        <AnchorPane>
+          <children>
+                  <Pane fx:id="serevrUserInteraction" prefHeight="551.0" prefWidth="222.0" style="-fx-background-color: #E0FFFF;">
+                     <children>
+                        <TextField fx:id="portxt" layoutX="45.0" layoutY="183.0" onAction="#pressStartServerBtn" prefHeight="25.0" prefWidth="132.0" promptText="port (default 5555)" />
+                      <Button fx:id="btnStartServer" alignment="CENTER" layoutX="45.0" layoutY="236.0" mnemonicParsing="false" onAction="#pressStartServerBtn" prefHeight="51.0" prefWidth="132.0" text="Start Server">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnStop" disable="true" layoutX="45.0" layoutY="320.0" mnemonicParsing="false" onAction="#pressStopServerBtn" prefHeight="51.0" prefWidth="132.0" text="Stop Server">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnExit" layoutX="85.0" layoutY="437.0" mnemonicParsing="false" onAction="#ExitFromServer" text="Exit" />
+                     </children>
+                  </Pane>
+                  <ImageView fitHeight="116.0" fitWidth="116.0" layoutX="45.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@NewLogo.png" />
+                     </image>
+                  </ImageView>
+          </children>
+        </AnchorPane>
+      <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="545.0" prefWidth="669.0" style="-fx-background-color: #FFFFE0;">
+               <children>
+                  <TextArea fx:id="txtArea" layoutX="82.0" layoutY="62.0" prefHeight="400.0" prefWidth="474.0" promptText="Press 'Start Server' (you can choose a port or leave empty)" />
+                  <Button fx:id="ClearLogBtn" alignment="CENTER" layoutX="253.0" layoutY="475.0" mnemonicParsing="false" onAction="#ClearLogTextArea" prefHeight="51.0" prefWidth="132.0" text="Clear Log">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+      </AnchorPane>
+      </items>
+    </SplitPane>
+    <HBox id="HBox" alignment="CENTER_LEFT" spacing="5.0" VBox.vgrow="NEVER">
+      <children>
+        <Label maxHeight="1.7976931348623157E308" maxWidth="-1.0" text="create by G8" textFill="#434242" HBox.hgrow="ALWAYS">
+          <font>
+            <Font size="11.0" fx:id="x3" />
+          </font>
+        </Label>
+        <Pane prefHeight="-1.0" prefWidth="-1.0" HBox.hgrow="ALWAYS" />
+      </children>
+      <padding>
+        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+      </padding>
+    </HBox>
+  </children>
+</VBox>

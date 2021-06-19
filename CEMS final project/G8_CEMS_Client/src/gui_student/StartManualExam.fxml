@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane layoutX="1.0" prefHeight="585.0" prefWidth="761.0" style="-fx-background-color: #FFFFE0;" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_student.StartManualExamController">
+   <children>
+      <Text fill="RED" layoutX="72.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attention! You must solve the test in the same file that was downloaded to your computer when you clicked &quot;Download&quot;. " wrappingWidth="311.3999732732773">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#5e87c0" layoutX="287.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manual Exam" textOrigin="CENTER" wrappingWidth="187.1999633789062">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+      <Text layoutX="72.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click here to download the file exam." wrappingWidth="333.19995050132275">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnDownload" layoutX="435.0" layoutY="219.0" mnemonicParsing="false" onAction="#btnDownload" prefHeight="31.0" prefWidth="78.0" text="Download" underline="true" />
+      <ImageView fx:id="imgDownload" fitHeight="37.0" fitWidth="60.0" layoutX="456.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@download.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="3.0" layoutY="263.0" prefHeight="114.0" prefWidth="762.0" />
+      <Button fx:id="btnSubmit" disable="true" layoutX="435.0" layoutY="367.0" mnemonicParsing="false" onAction="#btnSubmit" prefHeight="31.0" prefWidth="78.0" text="Submit" underline="true" />
+      <Text fx:id="txtUploadSucceed" fill="#18a116" layoutX="435.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The file was uploaded successfully." visible="false" wrappingWidth="294.3999732732773">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtError3" fill="#e04320" layoutX="436.0" layoutY="559.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. And attach a screenshot of this post." visible="false" wrappingWidth="294.3999732732773">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtError2" fill="#e04320" layoutX="436.0" layoutY="491.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Please submit the test to the course`s official email address/ teacher. (See the exam form)" visible="false" wrappingWidth="294.3999732732773">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtError1" fill="#e04320" layoutX="436.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Error." visible="false" wrappingWidth="294.3999732732773">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Separator layoutX="8.0" layoutY="75.0" prefHeight="9.0" prefWidth="761.0" />
+      <Text fx:id="txtMessageFrom" layoutX="525.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="message from teacher:" visible="false" wrappingWidth="148.80000000000007">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="imgNotification" fitHeight="50.0" fitWidth="50.0" layoutX="583.0" layoutY="23.0" onMouseClicked="#clickImgNotification" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@notification.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="textTimeLeft" layoutX="611.0" layoutY="373.0" prefHeight="20.0" prefWidth="127.0" textFill="#e40909">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="checkBoxShowTime" layoutX="611.0" layoutY="332.0" mnemonicParsing="false" onAction="#checkBoxShowTime" prefHeight="23.0" prefWidth="137.0" selected="true" text="Show Time Left">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Text layoutX="72.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To &quot;Submit&quot; the test click Submit and the file will be automatically sent to the system." wrappingWidth="311.3999732732773">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtDownloadSucceed" fill="#18a116" layoutX="436.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The file was download successfully." visible="false" wrappingWidth="294.3999732732773">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Label fx:id="textNotificationMsg" layoutX="524.0" layoutY="78.0" pickOnBounds="false" prefHeight="64.0" prefWidth="172.0" visible="false" />
+   </children>
+</AnchorPane>

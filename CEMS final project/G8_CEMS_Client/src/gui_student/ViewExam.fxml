@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="585.0" prefWidth="761.0" style="-fx-background-color: #FFFFE0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_student.ViewExamController">
+   <children>
+      <TextField fx:id="txtExamID" layoutX="374.0" layoutY="185.0" prefHeight="27.0" prefWidth="186.0" promptText="exam ID" />
+      <Button fx:id="btnGetCopyOfExam" disable="true" layoutX="235.0" layoutY="273.0" mnemonicParsing="false" onAction="#btnGetCopyOfExam" prefHeight="38.0" prefWidth="138.0" text="Get Exam Copy">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button fx:id="btnViewGrade" layoutX="433.0" layoutY="274.0" mnemonicParsing="false" onAction="#btnViewGrade" prefHeight="37.0" prefWidth="126.0" text="View Grade">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Text fill="#5573bd" layoutX="269.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View Exam Info" textAlignment="CENTER" wrappingWidth="223.5999999999999">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+      <Text layoutX="235.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Exam ID: " wrappingWidth="137.5999999999999">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtReqField" fill="#ef3838" layoutX="374.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* Required Field" visible="false" wrappingWidth="137.5999999999999" />
+      <Label fx:id="lblCourse" layoutX="235.0" layoutY="418.0" prefHeight="30.0" prefWidth="94.0" text="Course: " textFill="#5573bd" visible="false">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblGrade" layoutX="235.0" layoutY="472.0" prefHeight="30.0" prefWidth="118.0" text="Grade: " textFill="#5573bd" visible="false">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="textCourseName" layoutX="319.0" layoutY="418.0" text="Algebra" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="textGrade" layoutX="323.0" layoutY="472.0" text="89" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblProfession" layoutX="235.0" layoutY="366.0" prefHeight="30.0" prefWidth="104.0" text="Profession:" textFill="#5573bd" visible="false">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="textProfessionName" layoutX="354.0" layoutY="366.0" prefHeight="30.0" prefWidth="390.0" text="Mathematics" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDownload" layoutX="236.0" layoutY="235.0" prefHeight="27.0" prefWidth="327.0" text="Click to download a copy of the exam" textFill="#79b06c" visible="false">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgDownload" fitHeight="116.0" fitWidth="122.0" layoutX="351.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../images/download.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblExamIDNotFound" layoutX="236.0" layoutY="320.0" prefHeight="38.0" prefWidth="310.0" text="There is no information for this examID." textFill="#ef3838" visible="false">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgRefresh" fitHeight="37.0" fitWidth="32.0" layoutX="180.0" layoutY="277.0" onMouseClicked="#RefreshPage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/refresh.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="585.0" prefWidth="761.0" style="-fx-background-color: #FFFFE0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_principal.PrincipalDisplayReporByStudentController">
+   <children>
+      <BarChart fx:id="ExamsHisto" alternativeColumnFillVisible="true" barGap="10.0" layoutX="16.0" layoutY="156.0" legendSide="TOP" prefHeight="426.0" prefWidth="729.0" title="Exams Grades :">
+         <xAxis>
+            <CategoryAxis fx:id="ca" prefHeight="15.0" prefWidth="607.0" side="BOTTOM" tickLabelFill="#171717" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis fx:id="na" autoRanging="false" minorTickLength="8.0" side="LEFT" tickLabelGap="5.0" tickUnit="10.0" />
+         </yAxis>
+      </BarChart>
+      <Label fx:id="StudentIDLabel" contentDisplay="TOP" layoutX="184.0" layoutY="77.0" prefHeight="37.0" prefWidth="157.0" textAlignment="RIGHT" textFill="#255084">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Text layoutX="60.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID:" underline="true">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#4a6fbd" layoutX="250.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Report By Student">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Text>
+      <Label fx:id="StudentNameLabel" contentDisplay="TOP" layoutX="530.0" layoutY="76.0" prefHeight="37.0" prefWidth="223.0" textAlignment="RIGHT" textFill="#255084">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Text layoutX="364.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name:" underline="true">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Label fx:id="StudentAvgLabel" contentDisplay="TOP" layoutX="184.0" layoutY="116.0" prefHeight="37.0" prefWidth="157.0" textAlignment="RIGHT" textFill="#255084">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Text layoutX="60.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Average:" underline="true">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Label fx:id="StudentMedianLabel" contentDisplay="TOP" layoutX="530.0" layoutY="115.0" prefHeight="37.0" prefWidth="223.0" textAlignment="RIGHT" textFill="#255084">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Text layoutX="364.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Median:" underline="true">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

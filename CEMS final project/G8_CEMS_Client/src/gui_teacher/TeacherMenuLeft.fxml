@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="586.4" prefWidth="227.2" style="-fx-background-color: #E0FFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_teacher.TeacherController">
+   <children>
+      <ImageView fx:id="imgPrincipal" fitHeight="111.0" fitWidth="112.0" layoutX="58.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@teacher_userImg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgLogo" fitHeight="71.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@NewLogo.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="42.0" layoutY="172.0" prefHeight="27.0" prefWidth="145.0" text="Hello Teacher," textFill="#420775">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="textTeacherName" alignment="CENTER" layoutX="54.0" layoutY="187.0" prefHeight="27.0" prefWidth="121.0" textAlignment="CENTER" textFill="#420775">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnManageQuestionsBank" alignment="CENTER" layoutX="3.0" layoutY="225.0" mnemonicParsing="false" onAction="#btnManageQuestionsBank" prefHeight="35.0" prefWidth="221.0" text="Manage Questions Bank">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="9.0" layoutY="473.0" prefHeight="39.0" prefWidth="209.0" text="Contact us" textFill="#dda107">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="38.0" layoutY="508.0" prefHeight="35.0" prefWidth="145.0" text="Phone: 04-9901843">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgPhone" fitHeight="25.0" fitWidth="28.0" layoutX="14.0" layoutY="514.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@phoneIcon.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER_RIGHT" layoutX="39.0" layoutY="546.0" prefHeight="25.0" prefWidth="181.0" text="E-mail: cems@gmail.com">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <ImageView fx:id="imgEmail" fitHeight="62.0" fitWidth="30.0" layoutX="7.0" layoutY="544.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@email.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="6.0" layoutY="222.0" prefHeight="3.0" prefWidth="221.0" />
+      <Button fx:id="btnManageExamsBank" alignment="CENTER" layoutX="3.0" layoutY="265.0" mnemonicParsing="false" onAction="#btnManageExamsBank" prefHeight="35.0" prefWidth="221.0" text="Manage Exams Bank">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Separator layoutX="6.0" layoutY="262.0" prefHeight="3.0" prefWidth="221.0" />
+      <Button fx:id="btnGetStatistics" alignment="CENTER" layoutX="4.0" layoutY="380.0" mnemonicParsing="false" onAction="#btnGetStatistics" prefHeight="35.0" prefWidth="221.0" text="Get Statistics">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnScoreApproval" alignment="CENTER" layoutX="4.0" layoutY="341.0" mnemonicParsing="false" onAction="#btnScoreApproval" prefHeight="35.0" prefWidth="221.0" text="Score Approval">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Separator layoutX="6.0" layoutY="377.0" prefHeight="3.0" prefWidth="221.0" />
+      <Separator layoutX="3.0" layoutY="339.0" prefHeight="3.0" prefWidth="221.0" />
+      <Separator layoutX="5.0" layoutY="417.0" prefHeight="3.0" prefWidth="221.0" />
+      <Button fx:id="btnChangeExamTime" alignment="CENTER" layoutX="3.0" layoutY="303.0" mnemonicParsing="false" onAction="#btnChangeExamTime" prefHeight="35.0" prefWidth="221.0" text="Change Exam Time">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Separator layoutX="5.0" layoutY="301.0" prefHeight="3.0" prefWidth="221.0" />
+      <Label fx:id="pressLogout" layoutX="172.0" layoutY="3.0" onMouseClicked="#pressLogout" text="Logout" textFill="#7a32cc" underline="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
+

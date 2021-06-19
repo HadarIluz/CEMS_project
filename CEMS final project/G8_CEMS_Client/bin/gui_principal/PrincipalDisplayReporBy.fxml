@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="585.0" prefWidth="761.0" style="-fx-background-color: #FFFFE0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_principal.PrincipalDisplayReporByController">
+   <children>
+      <BarChart fx:id="CourseHisto" alternativeColumnFillVisible="true" barGap="25.0" layoutX="19.0" layoutY="157.0" legendSide="TOP" prefHeight="414.0" prefWidth="729.0" title="Grades Distribution:">
+         <xAxis>
+            <CategoryAxis fx:id="ca" prefHeight="15.0" prefWidth="607.0" side="BOTTOM" tickLabelFill="#171717" tickLabelGap="10.0" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis fx:id="na" autoRanging="false" side="LEFT" tickLabelGap="5.0" tickUnit="10.0" />
+         </yAxis>
+      </BarChart>
+      <Label fx:id="lblCourse" contentDisplay="TOP" layoutX="148.0" layoutY="98.0" prefHeight="37.0" prefWidth="249.0" textAlignment="RIGHT" textFill="#255084">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Text layoutX="64.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course:" underline="true">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#4a6fbd" layoutX="250.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Report By Course">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblProf" contentDisplay="TOP" layoutX="522.0" layoutY="98.0" prefHeight="37.0" prefWidth="237.0" textAlignment="RIGHT" textFill="#255084">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Text layoutX="403.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profession:" underline="true">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

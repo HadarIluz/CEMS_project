@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="585.0" prefWidth="761.0" style="-fx-background-color: #FFFFE0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_teacher.ScoreApprovalController">
+   <children>
+      <Text fill="#5e87c0" layoutX="278.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score Approval" textAlignment="CENTER" wrappingWidth="204.74680742621422">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="95.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter ExamID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="93.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please select student:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="selectStudent" disable="true" layoutX="333.0" layoutY="197.0" onAction="#selectStudent" prefWidth="150.0" promptText="student ID " />
+      <TextField fx:id="textCurrentGrade" editable="false" layoutX="333.0" layoutY="238.0" style="-fx-background-color: #e4faa0; -fx-border-color: BLACK;" />
+      <Text layoutX="91.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current exam grade:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#bc2525" layoutX="78.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="22.13671875">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="textGradeChangeReason" layoutX="94.0" layoutY="319.0" prefHeight="120.0" prefWidth="489.0" promptText="Required field- in case grade has been updated." />
+      <ScrollBar layoutX="568.0" layoutY="323.0" orientation="VERTICAL" prefHeight="114.0" prefWidth="14.0" />
+      <Text layoutX="92.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reasons for grade change:" wrappingWidth="297.1312255859375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#79b06c" layoutX="95.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter new grade:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textnewGradeField" layoutX="329.0" layoutY="454.0" promptText="new grade" />
+      <Button fx:id="btnUpdate" layoutX="339.0" layoutY="495.0" mnemonicParsing="false" onAction="#btnUpdate" prefHeight="38.0" prefWidth="117.0" text="Update" />
+      <TextField fx:id="textExamID" layoutX="333.0" layoutY="158.0" promptText="exam ID" />
+      <Label fx:id="textNewGradeReqField" layoutX="483.0" layoutY="458.0" prefHeight="17.0" prefWidth="263.0" text="Must add a reason and grade for update" textFill="#db2424" visible="false" />
+      <Button fx:id="btnShow" layoutX="516.0" layoutY="158.0" mnemonicParsing="false" onAction="#ShowStudentByExamID" text="Show" />
+      <Label fx:id="txtExamIdError" layoutX="568.0" layoutY="162.0" prefHeight="17.0" prefWidth="256.0" text="MIssing Parameters/Wrong input for Exam ID" textFill="#db2424" visible="false" />
+      <Label fx:id="lblCheat" layoutX="525.0" layoutY="243.0" prefHeight="17.0" prefWidth="117.0" text="Cheating Alert !" textFill="RED" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

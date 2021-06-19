@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="585.0" prefWidth="761.0" style="-fx-background-color: #FFFFE0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_teacher.EditExamController">
+   <children>
+      <Text layoutX="79.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time Allocated For Exam :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="84.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comment For Teacher :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="texTtitleScreen" fill="#4672ae" layoutX="246.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Exam" textAlignment="CENTER" wrappingWidth="256.150390625">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="80.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exam ID :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textExamID" disable="true" editable="false" layoutX="286.0" layoutY="144.0" prefHeight="25.0" prefWidth="122.0" />
+      <Label fx:id="textTimeForExam" layoutX="281.0" layoutY="175.0" prefHeight="30.0" prefWidth="135.0" text="120 minutes" textFill="#6a6868" visible="false">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textTeacherComment" layoutX="284.0" layoutY="232.0" prefHeight="91.0" prefWidth="333.0" />
+      <Text layoutX="80.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comment For Students :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="textStudentComment" layoutX="284.0" layoutY="339.0" prefHeight="91.0" prefWidth="333.0" />
+      <Button fx:id="btnSaveEditeExam" layoutX="588.0" layoutY="509.0" mnemonicParsing="false" onAction="#btnSaveEditeExam" prefHeight="40.0" prefWidth="122.0" text="Save Changes">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBack" layoutX="27.0" layoutY="534.0" mnemonicParsing="false" onAction="#btnBack" prefHeight="30.0" prefWidth="122.0" text="&lt;Back">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Text fx:id="textNavigation" fill="#5e057e" layoutX="37.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAVIGATION: Exam Bank &gt; Exam Detailes Step1" underline="true" visible="false" wrappingWidth="575.5537109375">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textTimeAllocateForExam" layoutX="286.0" layoutY="187.0" prefHeight="25.0" prefWidth="122.0" />
+      <Button fx:id="btnBrowseQuestions" layoutX="284.0" layoutY="449.0" mnemonicParsing="false" onAction="#btnBrowseQuestions" prefHeight="40.0" prefWidth="159.0" text="Browse Exam Questions" />
+      <ImageView fx:id="imgStep1" fitHeight="59.0" fitWidth="74.0" layoutX="289.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@step1color.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgStep1" fitHeight="59.0" fitWidth="74.0" layoutX="393.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@step2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnLoadNewManualExam" layoutX="284.0" layoutY="449.0" mnemonicParsing="false" onAction="#btnLoadNewManualExam" prefHeight="40.0" prefWidth="159.0" text="Load New File" visible="false" />
+   </children>
+</AnchorPane>

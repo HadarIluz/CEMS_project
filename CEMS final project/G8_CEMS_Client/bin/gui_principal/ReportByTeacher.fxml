@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="585.0" prefWidth="761.0" style="-fx-background-color: #FFFFE0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_principal.PrincipalDisplayReportByTeacherController">
+   <children>
+      <BarChart fx:id="ExamsHisto" alternativeColumnFillVisible="true" barGap="25.0" layoutX="16.0" layoutY="157.0" legendSide="TOP" prefHeight="426.0" prefWidth="729.0" title="Exams Average &amp; Median:">
+         <xAxis>
+            <CategoryAxis fx:id="ca" prefHeight="15.0" prefWidth="607.0" side="BOTTOM" tickLabelFill="#171717" tickLabelGap="1.0" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis fx:id="na" autoRanging="false" side="LEFT" tickLabelGap="5.0" tickUnit="10.0" />
+         </yAxis>
+      </BarChart>
+      <Label fx:id="TeacherIDLabel" contentDisplay="TOP" layoutX="184.0" layoutY="98.0" prefHeight="37.0" prefWidth="157.0" text="123456789" textAlignment="RIGHT" textFill="#255084">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Text layoutX="60.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher ID:" underline="true">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#4a6fbd" layoutX="250.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Report By Teacher">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Text>
+      <Label fx:id="TeacherNameLabel" contentDisplay="TOP" layoutX="530.0" layoutY="97.0" prefHeight="37.0" prefWidth="223.0" text="teacher teacher" textAlignment="RIGHT" textFill="#255084">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Text layoutX="364.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher Name:" underline="true">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

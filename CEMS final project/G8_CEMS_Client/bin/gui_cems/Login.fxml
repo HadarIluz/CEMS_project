@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_cems.LoginController">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="CEMS- Home Page">
+          <items>
+            <MenuItem fx:id="pressQuit" mnemonicParsing="false" onAction="#pressQuit" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem fx:id="pressAboutCEMS" mnemonicParsing="false" onAction="#pressAboutCEMS" text="About CEMS" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+  <ScrollPane prefHeight="567.0" prefWidth="900.0">
+    <content>
+      <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="545.0" prefWidth="898.0">
+        <children>
+                  <ImageView fx:id="background" fitHeight="550.0" fitWidth="898.0" layoutY="-2.0" opacity="0.42" pickOnBounds="true" smooth="false">
+                     <image>
+                        <Image url="@LogInBackground.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="236.0" layoutY="127.0" prefHeight="60.0" prefWidth="94.0" text="User ID">
+                     <font>
+                        <Font name="System Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="237.0" layoutY="204.0" prefHeight="57.0" prefWidth="81.0" text="Password">
+                     <font>
+                        <Font name="System Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtUserName" layoutX="338.0" layoutY="129.0" prefHeight="46.0" prefWidth="286.0" />
+                  <Label layoutX="375.0" layoutY="49.0" prefHeight="81.0" prefWidth="208.0" text="Login" textFill="#e49a05">
+                     <font>
+                        <Font name="System Bold" size="51.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="64.0" layoutY="422.0" prefHeight="68.0" prefWidth="132.0" text="Contact us" textFill="#dda107">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="64.0" layoutY="467.0" prefHeight="46.0" prefWidth="158.0" text="Phone: 04-9901843">
+                     <font>
+                        <Font name="System Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="64.0" layoutY="503.0" prefHeight="34.0" prefWidth="191.0" text="E-mail: cems@gmail.com">
+                     <font>
+                        <Font name="System Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="reqFieldPassword" layoutX="338.0" layoutY="253.0" prefHeight="17.0" prefWidth="244.0" textFill="#ef3838" />
+                  <PasswordField fx:id="txtPassword" layoutX="338.0" layoutY="204.0" prefHeight="47.0" prefWidth="286.0" />
+                  <Button fx:id="btnLogin" layoutX="413.0" layoutY="309.0" mnemonicParsing="false" onAction="#btnLogin" prefHeight="36.0" prefWidth="130.0" text="Login">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="logo" fitHeight="134.0" fitWidth="129.0" layoutX="11.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@NewLogo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="phone" fitHeight="25.0" fitWidth="28.0" layoutX="27.0" layoutY="477.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@phoneIcon.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="emil" fitHeight="62.0" fitWidth="30.0" layoutX="25.0" layoutY="505.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@email.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="reqFieldUserName" layoutX="340.0" layoutY="178.0" prefHeight="17.0" prefWidth="244.0" textFill="#ef3838" />
+                  <Text fx:id="textAboutCEMS" layoutX="150.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CEMS is a computerized test management system. In this system you can be tested manually / computerized. Build tests and get statistics on the data." visible="false" wrappingWidth="144.99609375" />
+        </children>
+      </AnchorPane>
+    </content>
+  </ScrollPane>
+    <HBox id="HBox" alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="900.0" spacing="5.0" VBox.vgrow="NEVER">
+      <children>
+        <Label maxHeight="1.7976931348623157E308" maxWidth="-1.0" text="Computerized exam management system" HBox.hgrow="ALWAYS">
+          <font>
+            <Font size="11.0" fx:id="x3" />
+          </font>
+          <textFill>
+            <Color blue="0.625" green="0.625" red="0.625" fx:id="x4" />
+          </textFill>
+        </Label>
+        <Pane prefHeight="-1.0" prefWidth="-1.0" HBox.hgrow="ALWAYS" />
+      </children>
+      <padding>
+        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+      </padding>
+    </HBox>
+  </children>
+</VBox>

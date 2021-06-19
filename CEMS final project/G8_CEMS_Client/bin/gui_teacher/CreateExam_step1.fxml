@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="585.0" prefWidth="761.0" style="-fx-background-color: #FFFFE0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_teacher.CreateExam_step1Controller">
+   <children>
+      <Text layoutX="59.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author : ">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="60.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Students Instructions: ">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="textLecturers_Instructions" layoutX="232.0" layoutY="351.0" prefHeight="72.0" prefWidth="383.0" promptText="Please write comment to teacher" />
+      <Text layoutX="56.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lecturers Instructions: ">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="textStudent_Instructions" layoutX="233.0" layoutY="437.0" prefHeight="72.0" prefWidth="383.0" promptText="Please write comment to student" />
+      <Button fx:id="btnNext" layoutX="590.0" layoutY="536.0" maxWidth="-Infinity" mnemonicParsing="false" onAction="#btnNext" prefHeight="25.0" prefWidth="124.0" text="NEXT &gt;" />
+      <Text layoutX="59.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profession:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="selectProffessionList" layoutX="235.0" layoutY="219.0" onAction="#selectProffessionList" prefWidth="150.0" promptText="profession list" />
+      <Text layoutX="59.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="selectCourseList" disable="true" layoutX="235.0" layoutY="263.0" onAction="#selectCourseList" prefWidth="150.0" promptText="courseList" />
+      <Text fill="#e44d4d" layoutX="46.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="20.356842041015625">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text fill="#e44d4d" layoutX="47.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="20.356842041015625">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text fill="#e44d4d" layoutX="47.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="20.356842041015625">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="58.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exam Duration:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textExamDuration" layoutX="236.0" layoutY="310.0" promptText="In minutes" />
+      <Text fill="#4672ae" layoutX="256.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create New Exam" wrappingWidth="256.150390625">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="imgStep1" fitHeight="59.0" fitWidth="74.0" layoutX="244.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@step1color.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgStep1" fitHeight="59.0" fitWidth="74.0" layoutX="348.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@step2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgStep1" fitHeight="59.0" fitWidth="74.0" layoutX="452.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@step3.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="textAuthor" fill="#656464" layoutX="238.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Jennifer Aniston&quot;">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="imgComputer" fitHeight="137.0" fitWidth="135.0" layoutX="578.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@desktop.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="noQbankError" layoutX="395.0" layoutY="221.0" text="No question bank was found for this profession." textFill="#f45050">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="btnComputerized" layoutX="235.0" layoutY="189.0" mnemonicParsing="false" onAction="#btnComputerizedPress" text="Computerized" />
+      <RadioButton fx:id="btnManual" layoutX="348.0" layoutY="189.0" mnemonicParsing="false" onAction="#btnManualPress" text="Manual" />
+      <Text layoutX="59.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ExamType:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#e44d4d" layoutX="48.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="20.356842041015625">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Label fx:id="msgErrorTime" layoutX="393.0" layoutY="311.0" prefHeight="20.0" prefWidth="321.0" textFill="#f45050">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
