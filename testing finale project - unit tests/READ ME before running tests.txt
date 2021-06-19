@@ -1,0 +1,2 @@
+Please, run tests with the attached DB file (for server side tests)
+Thank you
